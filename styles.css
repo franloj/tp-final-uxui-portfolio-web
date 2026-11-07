@@ -322,3 +322,51 @@ section {
     outline: 2px solid var(--text-main);
     outline-offset: 2px;
 }
+
+/* =========================================
+   Sección Métricas / Highlights
+   ========================================= */
+.metrics {
+    padding: var(--spacing-lg) var(--spacing-md);
+    background-color: var(--surface); /* Fondo un poco más claro para diferenciar */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.metrics-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    /* Grid responsive: 1 columna en mobile, hasta 4 en desktop */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-lg);
+    text-align: center;
+}
+
+.metric-card {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Microinteracción requerida por la rúbrica */
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.metric-label {
+    font-size: 1rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
