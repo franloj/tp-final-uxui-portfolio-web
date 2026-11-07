@@ -370,3 +370,85 @@ section {
     color: var(--text-main);
     font-weight: 500;
 }
+
+/* =========================================
+   Clases Generales para Secciones
+   ========================================= */
+.section-padding {
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.section-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-title {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    color: var(--text-main);
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+/* Subrayado decorativo para los títulos */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+/* =========================================
+   Sección Skills
+   ========================================= */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.skill-category {
+    background-color: var(--surface);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category h3 {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-sm);
+}
+
+.skill-category p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.chip {
+    background-color: rgba(59, 130, 246, 0.15); /* Fondo primario transparente */
+    color: #60a5fa; /* Azul clarito para contraste */
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
