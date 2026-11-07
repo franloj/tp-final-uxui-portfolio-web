@@ -1,0 +1,67 @@
+/* =========================================
+   Variables Globales y Design System
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    /* Paleta de colores */
+    --bg-color: #0f172a;
+    --surface: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    
+    /* Tipografías */
+    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    
+    /* Espaciados */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+}
+
+/* =========================================
+   Reset y Estilos Base
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+}
+
+/* Compensación de scroll para header fijo */
+section {
+    scroll-margin-top: 80px; 
+}
+
+/* =========================================
+   Accesibilidad
+   ========================================= */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
