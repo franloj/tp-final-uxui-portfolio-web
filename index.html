@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,50 @@
     <meta name="theme-color" content="#0f172a">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- Enlace de accesibilidad para saltar al contenido (Oculto hasta hacer focus con Tab) -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- =========================================
+         Header y Navegación
+         ========================================= -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo / Iniciales -->
+            <a href="#" class="logo">FV.</a>
+
+            <!-- Botón Menú Mobile (Accesible) -->
+            <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-nav"
+                aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Navegación Principal -->
+            <nav id="main-nav" class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Inicio</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <!-- Link a GitHub (con atributos de seguridad) -->
+                    <a href="https://github.com/franloj" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="Perfil de GitHub">GitHub</a>
+                    <!-- CTA Primario -->
+                    <a href="#contacto" class="btn-primary">Contacto</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenedor principal donde irán las secciones -->
+    <main id="main-content">
+
+    </main>
     <script src="script.js"></script>
 </body>
+
 </html>
