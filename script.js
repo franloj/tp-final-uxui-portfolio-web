@@ -1,4 +1,36 @@
 /* =========================================
+   Navegación Mobile (Menú Hamburguesa)
+   ========================================= */
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav = document.getElementById('main-nav');
+const navLinks = document.querySelectorAll('.nav-link, .btn-primary');
+
+if (menuToggle && mainNav) {
+    // Abrir/cerrar menú al tocar el botón
+    menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        mainNav.classList.toggle('active');
+    });
+
+    // Cerrar el menú automáticamente al tocar un enlace
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.setAttribute('aria-expanded', 'false');
+            mainNav.classList.remove('active');
+        });
+    });
+}
+
+/* =========================================
+   Footer: Año Dinámico
+   ========================================= */
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+}
+
+/* =========================================
    Lógica del Modal (Caso de Estudio)
    ========================================= */
 const modal = document.getElementById('case-study-modal');
