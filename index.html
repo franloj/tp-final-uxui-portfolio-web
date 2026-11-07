@@ -143,7 +143,6 @@
                     <!-- Proyecto 1: El que tiene Caso de Estudio -->
                     <article class="project-card">
                         <div class="project-image-wrapper">
-                            <!-- Imagen simulada con CSS por ahora -->
                             <div class="project-image-placeholder">HelpDesk UI</div>
                             <span class="project-year">2026</span>
                         </div>
@@ -156,7 +155,6 @@
                                 <span class="tag">Figma</span>
                             </div>
                             <div class="project-links">
-                                <!-- Este botón abrirá el modal que maquetaremos en el paso 8 -->
                                 <button class="btn-primary open-modal-btn">Ver caso de estudio</button>
                                 <a href="https://github.com/franloj" target="_blank" rel="noopener noreferrer" class="btn-text">Ver Repositorio &rarr;</a>
                             </div>
@@ -205,6 +203,43 @@
                 </div>
             </div>
         </section>
+
+        <!-- =========================================
+             Modal de Caso de Estudio (Proyecto 1)
+             ========================================= -->
+        <dialog id="case-study-modal" class="modal" aria-labelledby="modal-title">
+            <div class="modal-container">
+                <header class="modal-header">
+                    <h2 id="modal-title">Caso de Estudio: HelpDesk UI</h2>
+                    <button id="close-modal-btn" class="close-btn" aria-label="Cerrar modal">&times;</button>
+                </header>
+                
+                <div class="modal-body">
+                    <div class="case-section">
+                        <h3>🔴 El Problema</h3>
+                        <p>Los agentes de soporte perdían en promedio 3 minutos por ticket debido a una interfaz desordenada y falta de atajos de teclado, generando cuellos de botella en horas pico.</p>
+                    </div>
+                    
+                    <div class="case-section">
+                        <h3>🟢 La Solución</h3>
+                        <p>Se rediseñó el dashboard priorizando la legibilidad (WCAG AA), agrupando acciones frecuentes y conectando el frontend con una API RESTful rápida en Node.js/FastAPI.</p>
+                    </div>
+                    
+                    <div class="case-section">
+                        <h3>🛠️ El Proceso</h3>
+                        <p>1. <strong>Investigación:</strong> Entrevistas con 3 agentes y análisis heurístico.<br>
+                           2. <strong>Wireframing:</strong> Bocetos de baja fidelidad probados internamente.<br>
+                           3. <strong>Prototipado:</strong> Diseño en Figma de la UI final con el sistema de diseño.<br>
+                           4. <strong>Desarrollo:</strong> Maquetado HTML/CSS semántico y consumo de endpoints.</p>
+                    </div>
+                    
+                    <div class="case-section">
+                        <h3>📈 El Resultado</h3>
+                        <p>Reducción del tiempo de resolución en un 40% y mejora general en la satisfacción del equipo de soporte. Código base modularizado y documentado.</p>
+                    </div>
+                </div>
+            </div>
+        </dialog>
     </main>
     
     <script src="script.js"></script>

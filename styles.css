@@ -575,3 +575,80 @@ section {
     font-family: inherit;
     font-size: 1rem;
 }
+
+/* =========================================
+   Modal (Caso de Estudio)
+   ========================================= */
+.modal {
+    border: none;
+    border-radius: 12px;
+    background-color: var(--surface);
+    color: var(--text-main);
+    max-width: 700px;
+    width: 90%;
+    margin: auto; /* Centra el dialog nativo */
+    padding: 0;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Fondo oscuro detrás del modal */
+.modal::backdrop {
+    background-color: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh; /* Evita que el modal sea más alto que la pantalla */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    background-color: var(--surface);
+}
+
+.modal-header h2 {
+    font-size: 1.25rem;
+    color: var(--text-main);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover, .close-btn:focus-visible {
+    color: #ef4444; /* Rojo para cerrar */
+    outline: none;
+}
+
+.modal-body {
+    padding: var(--spacing-lg);
+    overflow-y: auto; /* Scroll interno si hay mucho texto */
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.case-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary);
+}
+
+.case-section p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
