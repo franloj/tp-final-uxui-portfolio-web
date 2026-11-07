@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <!-- Enlace de accesibilidad para saltar al contenido (Oculto hasta hacer focus con Tab) -->
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
     <!-- =========================================
@@ -19,16 +18,10 @@
          ========================================= -->
     <header class="header">
         <div class="header-container">
-            <!-- Logo / Iniciales -->
             <a href="#" class="logo">FV.</a>
-
-            <!-- Botón Menú Mobile (Accesible) -->
-            <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-nav"
-                aria-label="Abrir menú">
+            <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
                 <span class="hamburger"></span>
             </button>
-
-            <!-- Navegación Principal -->
             <nav id="main-nav" class="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#hero" class="nav-link">Inicio</a></li>
@@ -38,17 +31,13 @@
                     <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <!-- Link a GitHub (con atributos de seguridad) -->
-                    <a href="https://github.com/franloj" target="_blank" rel="noopener noreferrer" class="social-link"
-                        aria-label="Perfil de GitHub">GitHub</a>
-                    <!-- CTA Primario -->
+                    <a href="https://github.com/franloj" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de GitHub">GitHub</a>
                     <a href="#contacto" class="btn-primary">Contacto</a>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Contenedor principal donde irán las secciones -->
     <main id="main-content">
         <!-- =========================================
              Sección Hero
@@ -59,18 +48,14 @@
                     <div class="badge-availability">
                         <span class="pulse-dot"></span> Disponible para proyectos
                     </div>
-                    
                     <h1>Hola, soy Francisco Valle</h1>
                     <h2 class="role">Desarrollador Frontend & UX/UI Designer</h2>
-                    
                     <p class="value-prop">
                         Estudiante de Licenciatura en Sistemas. Diseño y desarrollo interfaces digitales accesibles, centradas en el usuario y con código semántico.
                     </p>
-                    
                     <div class="hero-location">
                         📍 Concepción del Uruguay, Entre Ríos (GMT-3)
                     </div>
-                    
                     <div class="hero-actions">
                         <a href="#proyectos" class="btn-primary">Ver proyectos</a>
                         <a href="#contacto" class="btn-secondary">Contactarme</a>
@@ -80,7 +65,7 @@
         </section>
 
         <!-- =========================================
-             Sección Métricas / Highlights
+             Sección Métricas
              ========================================= -->
         <section id="metricas" class="metrics">
             <div class="metrics-container">
@@ -109,9 +94,7 @@
         <section id="skills" class="section-padding">
             <div class="section-container">
                 <h2 class="section-title">Mis Skills</h2>
-                
                 <div class="skills-grid">
-                    <!-- Categoría 1 -->
                     <div class="skill-category">
                         <h3>Desarrollo Frontend</h3>
                         <p>Maquetación semántica, diseño responsive y lógica de interfaces modernas.</p>
@@ -120,11 +103,9 @@
                             <span class="chip">CSS3</span>
                             <span class="chip">JavaScript Vanilla</span>
                             <span class="chip">Tailwind CSS</span>
-                            <span class="chip">CSS Grid / Flexbox</span>
+                            <span class="chip">CSS Grid</span>
                         </div>
                     </div>
-
-                    <!-- Categoría 2 -->
                     <div class="skill-category">
                         <h3>Diseño UX/UI</h3>
                         <p>Diseño centrado en el usuario, creación de prototipos y sistemas de diseño.</p>
@@ -132,23 +113,95 @@
                             <span class="chip">Figma</span>
                             <span class="chip">Wireframing</span>
                             <span class="chip">Prototipado</span>
-                            <span class="chip">Arquitectura de Información</span>
-                            <span class="chip">Accesibilidad (WCAG)</span>
+                            <span class="chip">UI Responsive</span>
+                            <span class="chip">Accesibilidad</span>
                         </div>
                     </div>
-
-                    <!-- Categoría 3 -->
                     <div class="skill-category">
-                        <h3>Herramientas & Entorno</h3>
-                        <p>Manejo de versiones, control de calidad y despliegue continuo.</p>
+                        <h3>Herramientas & Back</h3>
+                        <p>Manejo de versiones, control de calidad y desarrollo de APIs.</p>
                         <div class="chips-container">
                             <span class="chip">Git / GitHub</span>
-                            <span class="chip">VS Code</span>
-                            <span class="chip">Lighthouse</span>
-                            <span class="chip">WAVE</span>
+                            <span class="chip">Node.js</span>
+                            <span class="chip">Python</span>
+                            <span class="chip">Postman</span>
                             <span class="chip">Netlify</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             Sección Proyectos
+             ========================================= -->
+        <section id="proyectos" class="section-padding">
+            <div class="section-container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                
+                <div class="projects-grid">
+                    <!-- Proyecto 1: El que tiene Caso de Estudio -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <!-- Imagen simulada con CSS por ahora -->
+                            <div class="project-image-placeholder">HelpDesk UI</div>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sistema Automático HelpDesk</h3>
+                            <p class="project-desc">Diseño y desarrollo frontend para una plataforma de gestión de tickets integrada con una API RESTful, enfocada en la usabilidad del agente de soporte.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS/JS</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Figma</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- Este botón abrirá el modal que maquetaremos en el paso 8 -->
+                                <button class="btn-primary open-modal-btn">Ver caso de estudio</button>
+                                <a href="https://github.com/franloj" target="_blank" rel="noopener noreferrer" class="btn-text">Ver Repositorio &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <div class="project-image-placeholder">UI Web</div>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Prototipo y Maquetado Web</h3>
+                            <p class="project-desc">Investigación UX, diseño de interfaces en Figma y maquetado responsive semántico desplegado en Netlify.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">UI Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/franloj/TP-3-HTML-CSS" target="_blank" rel="noopener noreferrer" class="btn-primary">Ver Código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <div class="project-image-placeholder">Algoritmos</div>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Visualización de Grafos y Árboles</h3>
+                            <p class="project-desc">Desarrollo de algoritmos de búsqueda (Dijkstra) y estructuras de datos en Python para resolver problemas lógicos complejos.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Lógica</span>
+                                <span class="tag">Algoritmos</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/franloj/Algoritmos" target="_blank" rel="noopener noreferrer" class="btn-primary">Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
