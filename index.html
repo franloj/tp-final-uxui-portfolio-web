@@ -7,6 +7,17 @@
     <title>Francisco Valle | Portfolio UX/UI</title>
     <meta name="description" content="Portfolio web personal de Francisco Valle.">
     <meta name="theme-color" content="#0f172a">
+    
+    <!-- Favicon (Usando un emoji rápido y moderno para no tener que crear una imagen extra) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+
+    <!-- Open Graph (Obligatorio según rúbrica) -->
+    <meta property="og:title" content="Francisco Valle | Portfolio UX/UI">
+    <meta property="og:description" content="Portfolio web personal de Francisco Valle. Desarrollador Frontend y Diseñador UX/UI.">
+    <meta property="og:image" content="https://tpfinaluxuiportfolio.netlify.app/img/perfil.jpeg">
+    <meta property="og:url" content="https://tpfinaluxuiportfolio.netlify.app/">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -39,8 +50,6 @@
     </header>
 
     <main id="main-content">
-        <!-- (Secciones Hero, Métricas, Skills, Proyectos, Experiencia y Sobre Mí omitidas para ahorrar espacio... MENTIRA, ¡ACÁ VAN COMPLETAS PARA QUE COPIES Y PEGUES SEGURO!) -->
-        
         <!-- =========================================
              Sección Hero
              ========================================= -->
@@ -240,7 +249,7 @@
         <!-- =========================================
              Sección Sobre mí
              ========================================= -->
-<section id="sobre-mi" class="section-padding">
+        <section id="sobre-mi" class="section-padding">
             <div class="section-container">
                 <h2 class="section-title">Sobre mí</h2>
                 <div class="about-grid">
@@ -285,13 +294,11 @@
                         <h3>¡Trabajemos juntos!</h3>
                         <p>Estoy disponible para nuevos proyectos, colaboraciones o simplemente para charlar sobre tecnología y diseño de interfaces. Completá el formulario o contactame por mis redes.</p>
                         <div class="contact-links">
-                            <!-- El mailto obligatorio -->
                             <a href="mailto:francisco02022017@gmail.com" class="btn-primary">Enviar Email Directo</a>
                             <a href="https://www.linkedin.com/in/francisco-valle-860a04449/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
                         </div>
                     </div>
                     
-                    <!-- Formulario con Netlify Forms (Atributo data-netlify="true" clave para el bonus) -->
                     <form name="contacto" method="POST" data-netlify="true" class="contact-form">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
