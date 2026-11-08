@@ -3,8 +3,8 @@
 Portfolio diseñado y desarrollado por Francisco Valle como trabajo final para la materia **Diseño UX-UI (2026)** de la Licenciatura en Sistemas (UADER Sede Concepción del Uruguay).
 
 ## 🔗 Enlaces
-- **Sitio en vivo:** [Pegar URL de Netlify acá]
-- **Figma:** [Pegar URL de Figma acá]
+- **Sitio en vivo:** [Ver en Netlify](https://tpfinaluxuiportfolio.netlify.app/)
+- **Figma:** [Ver Documentación en Figma](https://www.figma.com/design/qciAqYFB6r6NyNJtFzr7zz/Portfolio-UX-UI---Francisco-Valle?t=07EUWetyzQx22yxl-1)
 
 ## 🛠️ Tecnologías Utilizadas
 - HTML5 Semántico
