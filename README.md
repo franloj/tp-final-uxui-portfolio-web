@@ -21,3 +21,7 @@ Portfolio diseñado y desarrollado por Francisco Valle como trabajo final para l
 
 ## 🤖 Declaración de Uso de Asistencia IA
 En cumplimiento con las sugerencias de la cátedra, declaro que se utilizaron herramientas de Inteligencia Artificial como asistencia para estructurar el HTML semántico, generar la arquitectura CSS inicial y optimizar atributos de accesibilidad ARIA. Todo el código fue revisado, comprendido y modificado iterativamente para cumplir con los requerimientos específicos del trabajo.
+
+## 📊 Reporte Lighthouse
+
+![Reporte Lighthouse Mobile](img/lighthouse.png)
